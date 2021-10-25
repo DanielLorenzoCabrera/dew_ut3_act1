@@ -14,29 +14,51 @@
     box-sizing: border-box;
 }
 
+
+button{
+    border: 0;
+    font-family: var(--main_font);
+    color: #fff;
+    padding: .5em;
+    background-color: var(--main_color);
+    border-radius: .15em;
+}
+
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 .1em rgb(6, 25, 107);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(.95);
+}
+
+
 p{
     font-family: var(--main_font);
     font-size: 1.4em;
     
 }
 
-p:nth-of-type(2){
+#act1 > p:nth-of-type(2){
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-#act1{
+div{
     display: flex;
     flex-flow: column nowrap;
-    max-width: 50%;
+    max-width: 30%;
     margin: 2em auto;
     align-items: center;
     justify-content: space-around;
     outline: .1em solid var(--main_color);
+    border-radius: .15em;
 }
 
-#act1 > *{
+div> *{
     margin: .5em 0 ;
 }
 
