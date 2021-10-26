@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root{
+    --main_color : deepskyblue;
+    --main_font : 'Roboto', sans-serif ;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h3{
+    font-family: var(--main_font);
+    color: var(--main_color);
+    margin: 1em;
+    text-align: center;
+}
+
+
+
+
+button{
+    border: 0;
+    font-family: var(--main_font);
+    color: #fff;
+    padding: .5em;
+    background-color: var(--main_color);
+    border-radius: .15em;
+}
+
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 .1em rgb(6, 25, 107);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(.95);
+}
+
+
+p{
+    font-family: var(--main_font);
+    
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.wrapper > div{
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 300px;
+    margin: 2em 1em;
+    align-items: center;
+    justify-content: space-around;
+    outline: .1em solid var(--main_color);
+    border-radius: .15em;
+    text-align: center;
+    flex: 1 ;
+}
+
+#act1 > p:nth-of-type(2){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.wrapper > div > *{
+    margin: .5em 0 ;
+}
+
+
+span{
+    font-weight: 600;
+    color: var(--main_color);
+}
+
+.correcto {
+    color: seagreen;
+}
+
+.incorrecto {
+    color: red;
+}

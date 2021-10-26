@@ -1,0 +1,9 @@
+echo "# dew_ut3_act1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M mainˆ
+git push -u origin main
+
+https://github.com/DanielLorenzoCabrera/dew_ut3_act1.git
+git remote add origin git@github.com:username/repo.git 
